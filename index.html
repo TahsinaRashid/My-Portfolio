@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio Home Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#135bec",
+            "background-light": "#f6f6f8",
+            "background-dark": "#101622",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#232f48] px-4 sm:px-6 md:px-10 py-3">
+<div class="flex items-center gap-4 text-gray-800 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-gray-800 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">John Doe</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Home</a>
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">About</a>
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Projects</a>
+<a class="text-gray-600 dark:text-white text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90">
+<span class="truncate">Contact Me</span>
+</button>
+</div>
+</header>
+<main>
+<div class="@container">
+<div class="flex flex-col-reverse gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row @[864px]:py-20">
+<div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                      Hi, I'm John Doe. A Full-Stack Developer
+                    </h1>
+<h2 class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      I specialize in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products with React &amp; Node.js.
+                    </h2>
+</div>
+<div class="flex-wrap gap-3 flex">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-opacity-90">
+<span class="truncate">Download Resume</span>
+</button>
+</div>
+</div>
+<div class="w-full @[864px]:max-w-[300px] flex items-center justify-center">
+<div class="w-48 h-48 sm:w-64 sm:h-64 @[864px]:w-full @[864px]:h-auto @[864px]:aspect-square bg-center bg-no-repeat bg-cover rounded-full" data-alt="professional headshot of a developer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDpDYWziRXShDUK1R6gxQ7J1bVKjGunCI8GgDJ8vgK7i-NPSbpIV7u7IN8KINmbM2V4xAstOurJn2phE_Fm44m-CJO8i27q3PsLJJb4iu_aWRBgjNXqTM0IZMCtI58NzJjkiVlbSxl8xJhNBKSPygwrIJNoamtrLK-CwffkQcSJZeHFIrnkxGP3rUQU691NaOH8oQPrvUobuhQ2yPjbkZnzM9Xrh9R-o_5ZxZ4MkjTGj0ICTakQXKAzWK048ozOrosGmcjvYwrRtSQ");'></div>
+</div>
+</div>
+</div>
+<section>
+    <!-- Section: My Journey Into Tech -->
+<div>
+<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">My Journey Into Tech</h2>
+<div class="grid grid-cols-[auto_1fr] gap-x-4 px-4">
+<div class="flex flex-col items-center gap-1 pt-3">
+<div class="text-slate-600 dark:text-white"><span class="material-symbols-outlined">school</span></div>
+<div class="w-[1.5px] bg-slate-300 dark:bg-[#324467] h-2 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal">Started University</p>
+<p class="text-slate-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">September 2018</p>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-2">Began my Computer Science degree, diving headfirst into the world of algorithms, data structures, and late-night coding sessions.</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[1.5px] bg-slate-300 dark:bg-[#324467] h-2"></div>
+<div class="text-slate-600 dark:text-white"><span class="material-symbols-outlined">work</span></div>
+<div class="w-[1.5px] bg-slate-300 dark:bg-[#324467] h-2 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal">First Internship</p>
+<p class="text-slate-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">June 2020</p>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-2">Landed my first software engineering internship. I learned to collaborate on a large codebase and contribute to real-world products.</p>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-[1.5px] bg-slate-300 dark:bg-[#324467] h-2"></div>
+<div class="text-slate-600 dark:text-white"><span class="material-symbols-outlined">workspace_premium</span></div>
+<div class="w-[1.5px] bg-slate-300 dark:bg-[#324467] h-2 grow"></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal">Graduated with CS Degree</p>
+<p class="text-slate-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">May 2022</p>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-2">Completed my degree with honors, equipped with a solid theoretical foundation and a passion for building practical applications.</p>
+</div>
+<div class="flex flex-col items-center gap-1 pb-3">
+<div class="w-[1.5px] bg-slate-300 dark:bg-[#324467] h-2"></div>
+<div class="text-slate-600 dark:text-white"><span class="material-symbols-outlined">domain</span></div>
+</div>
+<div class="flex flex-1 flex-col py-3">
+<p class="text-slate-800 dark:text-white text-base font-medium leading-normal">Joined Current Company</p>
+<p class="text-slate-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">August 2022</p>
+<p class="text-slate-600 dark:text-slate-400 text-base mt-2">Started my career as a Full-Stack Developer, where I currently work on building scalable web applications and improving user experiences.</p>
+</div>
+</div>
+</div>
+<!-- Section: Beyond the Code -->
+<div>
+<h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Beyond the Code</h2>
+<p class="text-slate-600 dark:text-slate-400 px-4 mb-6">When I'm not at my computer, I enjoy a few hobbies that help me recharge and find new inspiration.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-4">
+<div class="flex flex-col items-center gap-3 p-6 bg-slate-100 dark:bg-[#182132] rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl">hiking</span>
+<h3 class="text-slate-800 dark:text-white font-bold">Hiking</h3>
+<p class="text-slate-600 dark:text-slate-400 text-center text-sm">Exploring trails and mountains to disconnect and enjoy nature's beauty.</p>
+</div>
+<div class="flex flex-col items-center gap-3 p-6 bg-slate-100 dark:bg-[#182132] rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl">photo_camera</span>
+<h3 class="text-slate-800 dark:text-white font-bold">Photography</h3>
+<p class="text-slate-600 dark:text-slate-400 text-center text-sm">Capturing moments and landscapes, finding unique perspectives in the everyday.</p>
+</div>
+<div class="flex flex-col items-center gap-3 p-6 bg-slate-100 dark:bg-[#182132] rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl">sports_esports</span>
+<h3 class="text-slate-800 dark:text-white font-bold">Gaming</h3>
+<p class="text-slate-600 dark:text-slate-400 text-center text-sm">Diving into immersive stories and strategic challenges in the virtual world.</p>
+</div>
+</div>
+</div>
+
+
+
+<section class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/10 dark:border-gray-700/50 px-4 sm:px-6 lg:px-10 py-3">
+
+
+</div>
+<div class="flex-grow pt-10 pb-20">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-black dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Skills &amp; Expertise</p>
+<p class="text-gray-600 dark:text-[#92a4c9] text-base font-normal leading-normal">A showcase of my technical capabilities and the tools I use to build modern web applications.</p>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Frontend Development</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">html</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">HTML5</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">css</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">CSS3</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">javascript</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">JavaScript</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">code</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">TypeScript</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Intermediate</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">group</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">React</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">brush</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">Vue.js</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Intermediate</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Backend Development</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">data_object</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">Node.js</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">code</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">Python</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Intermediate</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">storage</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">PostgreSQL</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">database</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">MongoDB</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Intermediate</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-black dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">DevOps &amp; Tools</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">hub</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">Git</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">deployed_code</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">Docker</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Intermediate</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">cloud</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">AWS</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Beginner</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-gray-200 dark:border-[#324467] bg-white dark:bg-[#192233] p-4 flex-col hover:border-primary/50 dark:hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">integration_instructions</span>
+<div class="flex flex-col gap-1 mt-1">
+<h2 class="text-black dark:text-white text-base font-bold leading-tight">VS Code</h2>
+<p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="flex-1 py-10 px-4 sm:px-6 lg:px-10">
+    <div class="flex flex-wrap justify-between gap-3 p-4 mb-8">
+        <div class="flex min-w-72 flex-col gap-3">
+            <p class="text-black dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">My Work</p>
+            <p class="text-gray-500 dark:text-[#92a4c9] text-base font-normal leading-normal">A selection of my best work in web development and design.</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="flex flex-col gap-4 p-5 rounded-xl bg-white dark:bg-[#182132] border border-gray-200 dark:border-[#232f48] transition-shadow hover:shadow-2xl hover:shadow-primary/20">
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Screenshot of an e-commerce website interface" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5qMliHu06sxa31Flk1YeR-qKtDW63k8w-H9PXdCM7ktTOkHF7eQ9XmAlHTLODZjYUI0aMOMB9SHWMnnXmIExGXfUSY0iSGQyTEn9DJL1LKYvQwRRKzMmWVZdNKQUnKBHqi1MVKcCpXbcZIMmSLfvsnVh1gbHDIN_C4Yfa-MzWGg6n24y7DhAQxTO0KgVoccZGjc4lw53W9l-LPaFDCocj3VBHycfW88Jbkm-LRnPCcYVle9V45ne5Y3P3Mj98B8FFybXw_6uB-GU');"></div>
+            <div class="flex flex-col gap-3">
+                <h3 class="text-black dark:text-white text-lg font-bold leading-normal">E-commerce Platform</h3>
+                <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">A full-stack e-commerce site with features like product search, cart, and payment integration.</p>
+            </div>
+            <div class="flex gap-2 flex-wrap">
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">React</p>
+                </div>
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">Node.js</p>
+                </div>
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">PostgreSQL</p>
+                </div>
+            </div>
+            <div class="flex gap-3 pt-2">
+                <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                    <span class="truncate">View Project</span>
+                </button>
+                <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-[#232f48] text-black dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-[#334155] transition-colors">
+                    <span class="truncate">Case Study</span>
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4 p-5 rounded-xl bg-white dark:bg-[#182132] border border-gray-200 dark:border-[#232f48] transition-shadow hover:shadow-2xl hover:shadow-primary/20">
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Screenshot of a project management dashboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBp79F-PbI3B302BkjkTbHKfUu0qTPKPxQ4iXOofacqGy6kasV_rpQSZGd05d10I-4SzJUdbHn09snuVSe2gVyo15Kaevjbx5aO628RfVq8G_b3ZfO6KCThGF0Dmblhi0ERdBH9a50iUBsThTQQzxvVpNQF4OgoXjcgjnPJsZe-cFcuC-7H3WLLOvDFP0K3MkDhT_UAjFX8bHCiX6piuruK4f39altxCOuPt0arQW7UP_eKlFLDx1P16TVvKrycPpYDRXVPXgbyyEo');"></div>
+            <div class="flex flex-col gap-3">
+                <h3 class="text-black dark:text-white text-lg font-bold leading-normal">Project Management Tool</h3>
+                <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">A collaborative tool for teams to manage tasks, track progress, and communicate effectively.</p>
+            </div>
+            <div class="flex gap-2 flex-wrap">
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">Vue.js</p>
+                </div>
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">Firebase</p>
+                </div>
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">Python</p>
+                </div>
+            </div>
+            <div class="flex gap-3 pt-2">
+                <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                    <span class="truncate">View Project</span>
+                </button>
+                <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-[#232f48] text-black dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-[#334155] transition-colors">
+                    <span class="truncate">Case Study</span>
+                </button>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4 p-5 rounded-xl bg-white dark:bg-[#182132] border border-gray-200 dark:border-[#232f48] transition-shadow hover:shadow-2xl hover:shadow-primary/20">
+            <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Screenshot of a complex data visualization dashboard" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoajItZlzPetO0dGLaMax2o-mct5X54DmJArEhGJvdUpxH53teQ-fQhLZlAx5yC19ljPhT7dd_X6HbQWyYdYkmwfRiXVWxfOORfVSBouVsctlBnfx43Gc478or5lYFlP3T-HaNHJDGdjZxNgMzmaTED6imN75_s0yNuIbk4tTM-YYmU7h4J3lW0xmfCXP6S33veWB4VN4Vjf7GUXMR7gTVKRlqFYBygImIsVz4dMgrQNwAHMRFzhMSBJmI7Y64iNhb6NX1Bw0YFuI');"></div>
+            <div class="flex flex-col gap-3">
+                <h3 class="text-black dark:text-white text-lg font-bold leading-normal">Data Visualization Dashboard</h3>
+                <p class="text-gray-500 dark:text-[#92a4c9] text-sm font-normal leading-normal">An interactive dashboard for visualizing complex datasets with real-time updates and filtering.</p>
+            </div>
+            <div class="flex gap-2 flex-wrap">
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">D3.js</p>
+                </div>
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">Tableau</p>
+                </div>
+                <div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary/20 px-3">
+                    <p class="text-primary text-xs font-medium leading-normal">AWS</p>
+                </div>
+            </div>
+            <div class="flex gap-3 pt-2">
+                <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                    <span class="truncate">View Project</span>
+                </button>
+                <button class="flex flex-1 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-[#232f48] text-black dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-[#334155] transition-colors">
+                    <span class="truncate">Case Study</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</Section>
+
+
+
+
+
+<section class="flex-1 py-10">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 p-4">
+<a class="text-slate-500 dark:text-[#92a4c9] text-base font-medium leading-normal hover:text-primary" href="#">Projects</a>
+<span class="text-slate-500 dark:text-[#92a4c9] text-base font-medium leading-normal">/</span>
+<span class="text-slate-900 dark:text-white text-base font-medium leading-normal">E-commerce Analytics Dashboard</span>
+</div>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">E-commerce Analytics Dashboard</h1>
+</div>
+<!-- HeaderImage -->
+<div class="@container px-4 py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-slate-200 dark:bg-[#111722] rounded-lg min-h-80" data-alt="Screenshot of the e-commerce analytics dashboard showing various charts and graphs on a dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHYvhvxRTSPSp2u2IOfXQd5p22f2ARQ61G2FBbTU-0jkbyg_s1cmQr2UywSRSQdtN6dhznAs7Ojq81_K7-mRwtmZpAYxh8smkq_PJnjmydQHDYbm0s43rIVAhKIhrmnfj7m99l1ziJagfA2v9n4FEKiXvqgdfcuXj-lvx0xUjkWdKA9VK7ktYmBM9kym3yLzPCfy6WuhVkuzQPTxl1Uj2n9THs1IvBouDACe7eB26mfoJ4ppvpm0upr9JTImrY9-OktF2t5wsI1Ao");'></div>
+</div>
+<!-- Content Sections -->
+<div class="p-4 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
+<!-- Left Column -->
+<div class="lg:col-span-2 space-y-8">
+<!-- Project Overview -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Project Overview</h3>
+<p class="text-slate-600 dark:text-slate-400">This project is a comprehensive analytics dashboard designed for e-commerce businesses. It provides real-time insights into sales, customer behavior, and inventory management. The main goal was to create a user-friendly interface that empowers business owners to make data-driven decisions quickly and efficiently by visualizing complex data sets in an intuitive way.</p>
+</section>
+<!-- Challenges & Solutions -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Challenges &amp; Solutions</h3>
+<p class="text-slate-600 dark:text-slate-400">One of the primary challenges was handling and processing large volumes of real-time data without compromising the performance of the dashboard. This was solved by implementing an efficient data aggregation pipeline on the backend using Node.js and Redis for caching. On the frontend, we used virtualized lists in React to ensure smooth scrolling and rendering of large data tables and charts.</p>
+</section>
+<!-- Future Improvements -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Future Improvements</h3>
+<p class="text-slate-600 dark:text-slate-400">Future plans include integrating machine learning models to provide predictive analytics, such as sales forecasting and customer churn prediction. Additionally, we plan to add more customization options, allowing users to create their own dashboards and reports. A mobile-responsive version is also on the roadmap to provide access to key metrics on the go.</p>
+</section>
+</div>
+<!-- Right Column -->
+<div class="lg:col-span-1 space-y-8">
+<!-- Action Buttons -->
+<div class="space-y-4">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform hover:scale-105">
+<span class="material-symbols-outlined">open_in_new</span>
+<span class="truncate">View Live Project</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary/20 dark:bg-primary/20 text-primary dark:text-primary-400 text-base font-bold transition-colors hover:bg-primary/30 dark:hover:bg-primary/40">
+<svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7.0375 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.875 15.8875 6.45 16.625 6.65 16.925C7.5 18.3375 8.95 17.9 9.5625 17.625C9.65 17.0125 9.8875 16.5875 10.1625 16.3625C7.9625 16.1125 5.65 15.275 5.65 11.5625C5.65 10.5375 6.0125 9.6875 6.625 9.025C6.525 8.775 6.225 7.95 6.725 6.6625C6.725 6.6625 7.55 6.4 9.525 7.6875C10.325 7.475 11.1625 7.375 12 7.375C12.8375 7.375 13.675 7.475 14.475 7.6875C16.45 6.4 17.275 6.6625 17.275 6.6625C17.775 7.95 17.475 8.775 17.375 9.025C17.9875 9.6875 18.35 10.5375 18.35 11.5625C18.35 15.2875 16.0375 16.1125 13.8375 16.3625C14.175 16.65 14.475 17.2125 14.475 18.0625C14.475 19.275 14.4625 20.25 14.4625 20.575C14.4625 20.8375 14.65 21.1375 15.1625 21.0375C19.1375 19.75 22 16.425 22 12C22 6.475 17.525 2 12 2Z"></path>
+</svg>
+<span class="truncate">View on GitHub</span>
+</button>
+</div>
+<!-- Technology Stack -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Technology Stack</h3>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">React</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Node.js</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">PostgreSQL</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Tailwind CSS</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Chart.js</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Figma</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Vercel</span>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section class="flex-1 py-10">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 p-4">
+<a class="text-slate-500 dark:text-[#92a4c9] text-base font-medium leading-normal hover:text-primary" href="#">Projects</a>
+<span class="text-slate-500 dark:text-[#92a4c9] text-base font-medium leading-normal">/</span>
+<span class="text-slate-900 dark:text-white text-base font-medium leading-normal">E-commerce Analytics Dashboard</span>
+</div>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">E-commerce Analytics Dashboard</h1>
+</div>
+<!-- HeaderImage -->
+<div class="@container px-4 py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-slate-200 dark:bg-[#111722] rounded-lg min-h-80" data-alt="Screenshot of the e-commerce analytics dashboard showing various charts and graphs on a dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHYvhvxRTSPSp2u2IOfXQd5p22f2ARQ61G2FBbTU-0jkbyg_s1cmQr2UywSRSQdtN6dhznAs7Ojq81_K7-mRwtmZpAYxh8smkq_PJnjmydQHDYbm0s43rIVAhKIhrmnfj7m99l1ziJagfA2v9n4FEKiXvqgdfcuXj-lvx0xUjkWdKA9VK7ktYmBM9kym3yLzPCfy6WuhVkuzQPTxl1Uj2n9THs1IvBouDACe7eB26mfoJ4ppvpm0upr9JTImrY9-OktF2t5wsI1Ao");'></div>
+</div>
+<!-- Content Sections -->
+<div class="p-4 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
+<!-- Left Column -->
+<div class="lg:col-span-2 space-y-8">
+<!-- Project Overview -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Project Overview</h3>
+<p class="text-slate-600 dark:text-slate-400">This project is a comprehensive analytics dashboard designed for e-commerce businesses. It provides real-time insights into sales, customer behavior, and inventory management. The main goal was to create a user-friendly interface that empowers business owners to make data-driven decisions quickly and efficiently by visualizing complex data sets in an intuitive way.</p>
+</section>
+<!-- Challenges & Solutions -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Challenges &amp; Solutions</h3>
+<p class="text-slate-600 dark:text-slate-400">One of the primary challenges was handling and processing large volumes of real-time data without compromising the performance of the dashboard. This was solved by implementing an efficient data aggregation pipeline on the backend using Node.js and Redis for caching. On the frontend, we used virtualized lists in React to ensure smooth scrolling and rendering of large data tables and charts.</p>
+</section>
+<!-- Future Improvements -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Future Improvements</h3>
+<p class="text-slate-600 dark:text-slate-400">Future plans include integrating machine learning models to provide predictive analytics, such as sales forecasting and customer churn prediction. Additionally, we plan to add more customization options, allowing users to create their own dashboards and reports. A mobile-responsive version is also on the roadmap to provide access to key metrics on the go.</p>
+</section>
+</div>
+<!-- Right Column -->
+<div class="lg:col-span-1 space-y-8">
+<!-- Action Buttons -->
+<div class="space-y-4">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform hover:scale-105">
+<span class="material-symbols-outlined">open_in_new</span>
+<span class="truncate">View Live Project</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary/20 dark:bg-primary/20 text-primary dark:text-primary-400 text-base font-bold transition-colors hover:bg-primary/30 dark:hover:bg-primary/40">
+<svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7.0375 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.875 15.8875 6.45 16.625 6.65 16.925C7.5 18.3375 8.95 17.9 9.5625 17.625C9.65 17.0125 9.8875 16.5875 10.1625 16.3625C7.9625 16.1125 5.65 15.275 5.65 11.5625C5.65 10.5375 6.0125 9.6875 6.625 9.025C6.525 8.775 6.225 7.95 6.725 6.6625C6.725 6.6625 7.55 6.4 9.525 7.6875C10.325 7.475 11.1625 7.375 12 7.375C12.8375 7.375 13.675 7.475 14.475 7.6875C16.45 6.4 17.275 6.6625 17.275 6.6625C17.775 7.95 17.475 8.775 17.375 9.025C17.9875 9.6875 18.35 10.5375 18.35 11.5625C18.35 15.2875 16.0375 16.1125 13.8375 16.3625C14.175 16.65 14.475 17.2125 14.475 18.0625C14.475 19.275 14.4625 20.25 14.4625 20.575C14.4625 20.8375 14.65 21.1375 15.1625 21.0375C19.1375 19.75 22 16.425 22 12C22 6.475 17.525 2 12 2Z"></path>
+</svg>
+<span class="truncate">View on GitHub</span>
+</button>
+</div>
+<!-- Technology Stack -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Technology Stack</h3>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">React</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Node.js</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">PostgreSQL</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Tailwind CSS</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Chart.js</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Figma</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Vercel</span>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section class="flex-1 py-10">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 p-4">
+<a class="text-slate-500 dark:text-[#92a4c9] text-base font-medium leading-normal hover:text-primary" href="#">Projects</a>
+<span class="text-slate-500 dark:text-[#92a4c9] text-base font-medium leading-normal">/</span>
+<span class="text-slate-900 dark:text-white text-base font-medium leading-normal">E-commerce Analytics Dashboard</span>
+</div>
+<!-- PageHeading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<h1 class="text-slate-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">E-commerce Analytics Dashboard</h1>
+</div>
+<!-- HeaderImage -->
+<div class="@container px-4 py-3">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-slate-200 dark:bg-[#111722] rounded-lg min-h-80" data-alt="Screenshot of the e-commerce analytics dashboard showing various charts and graphs on a dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHYvhvxRTSPSp2u2IOfXQd5p22f2ARQ61G2FBbTU-0jkbyg_s1cmQr2UywSRSQdtN6dhznAs7Ojq81_K7-mRwtmZpAYxh8smkq_PJnjmydQHDYbm0s43rIVAhKIhrmnfj7m99l1ziJagfA2v9n4FEKiXvqgdfcuXj-lvx0xUjkWdKA9VK7ktYmBM9kym3yLzPCfy6WuhVkuzQPTxl1Uj2n9THs1IvBouDACe7eB26mfoJ4ppvpm0upr9JTImrY9-OktF2t5wsI1Ao");'></div>
+</div>
+<!-- Content Sections -->
+<div class="p-4 grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
+<!-- Left Column -->
+<div class="lg:col-span-2 space-y-8">
+<!-- Project Overview -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Project Overview</h3>
+<p class="text-slate-600 dark:text-slate-400">This project is a comprehensive analytics dashboard designed for e-commerce businesses. It provides real-time insights into sales, customer behavior, and inventory management. The main goal was to create a user-friendly interface that empowers business owners to make data-driven decisions quickly and efficiently by visualizing complex data sets in an intuitive way.</p>
+</section>
+<!-- Challenges & Solutions -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Challenges &amp; Solutions</h3>
+<p class="text-slate-600 dark:text-slate-400">One of the primary challenges was handling and processing large volumes of real-time data without compromising the performance of the dashboard. This was solved by implementing an efficient data aggregation pipeline on the backend using Node.js and Redis for caching. On the frontend, we used virtualized lists in React to ensure smooth scrolling and rendering of large data tables and charts.</p>
+</section>
+<!-- Future Improvements -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Future Improvements</h3>
+<p class="text-slate-600 dark:text-slate-400">Future plans include integrating machine learning models to provide predictive analytics, such as sales forecasting and customer churn prediction. Additionally, we plan to add more customization options, allowing users to create their own dashboards and reports. A mobile-responsive version is also on the roadmap to provide access to key metrics on the go.</p>
+</section>
+</div>
+<!-- Right Column -->
+<div class="lg:col-span-1 space-y-8">
+<!-- Action Buttons -->
+<div class="space-y-4">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary text-white text-base font-bold transition-transform hover:scale-105">
+<span class="material-symbols-outlined">open_in_new</span>
+<span class="truncate">View Live Project</span>
+</button>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary/20 dark:bg-primary/20 text-primary dark:text-primary-400 text-base font-bold transition-colors hover:bg-primary/30 dark:hover:bg-primary/40">
+<svg class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7.0375 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.875 15.8875 6.45 16.625 6.65 16.925C7.5 18.3375 8.95 17.9 9.5625 17.625C9.65 17.0125 9.8875 16.5875 10.1625 16.3625C7.9625 16.1125 5.65 15.275 5.65 11.5625C5.65 10.5375 6.0125 9.6875 6.625 9.025C6.525 8.775 6.225 7.95 6.725 6.6625C6.725 6.6625 7.55 6.4 9.525 7.6875C10.325 7.475 11.1625 7.375 12 7.375C12.8375 7.375 13.675 7.475 14.475 7.6875C16.45 6.4 17.275 6.6625 17.275 6.6625C17.775 7.95 17.475 8.775 17.375 9.025C17.9875 9.6875 18.35 10.5375 18.35 11.5625C18.35 15.2875 16.0375 16.1125 13.8375 16.3625C14.175 16.65 14.475 17.2125 14.475 18.0625C14.475 19.275 14.4625 20.25 14.4625 20.575C14.4625 20.8375 14.65 21.1375 15.1625 21.0375C19.1375 19.75 22 16.425 22 12C22 6.475 17.525 2 12 2Z"></path>
+</svg>
+<span class="truncate">View on GitHub</span>
+</button>
+</div>
+<!-- Technology Stack -->
+<section>
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-2">Technology Stack</h3>
+<div class="flex flex-wrap gap-2">
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">React</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Node.js</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">PostgreSQL</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Tailwind CSS</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Chart.js</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Figma</span>
+<span class="rounded-full bg-primary/20 px-3 py-1 text-sm font-medium text-primary">Vercel</span>
+</div>
+</section>
+</div>
+</div>
+</section>
+
+
+
+<section class="flex-grow py-12 md:py-20 px-4 ">
+<div class="flex flex-col gap-12">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Get in Touch</p>
+<p class="text-gray-500 dark:text-[#92a4c9] text-base font-normal leading-normal">Feel free to reach out for collaborations, job opportunities, or just to say hello!</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4 bg-transparent px-4 min-h-14 justify-between border-b border-gray-200 dark:border-gray-800 py-4">
+<div class="flex items-center gap-4">
+<div class="text-gray-600 dark:text-white flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#232f48] shrink-0 size-10">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<p class="text-gray-800 dark:text-white text-base font-normal leading-normal flex-1 truncate">developer@email.com</p>
+</div>
+<div class="shrink-0">
+<button class="text-primary text-sm font-medium leading-normal">Copy</button>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-transparent px-4 min-h-14 justify-between border-b border-gray-200 dark:border-gray-800 py-4">
+<div class="flex items-center gap-4">
+<div class="text-gray-600 dark:text-white flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#232f48] shrink-0 size-10">
+<span class="material-symbols-outlined">phone</span>
+</div>
+<p class="text-gray-800 dark:text-white text-base font-normal leading-normal flex-1 truncate">+1 (123) 456-7890</p>
+</div>
+<div class="shrink-0">
+<button class="text-primary text-sm font-medium leading-normal">Call</button>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-transparent px-4 min-h-14 justify-between border-b border-gray-200 dark:border-gray-800 py-4">
+<div class="flex items-center gap-4">
+<div class="text-gray-600 dark:text-white flex items-center justify-center rounded-lg bg-gray-100 dark:bg-[#232f48] shrink-0 size-10">
+<span class="material-symbols-outlined">chat</span>
+</div>
+<p class="text-gray-800 dark:text-white text-base font-normal leading-normal flex-1 truncate">Connect on WhatsApp</p>
+</div>
+<div class="shrink-0">
+<button class="text-primary text-sm font-medium leading-normal">Chat</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="name">Name</label>
+<input class="block w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600" id="name" name="name" placeholder="Enter your name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email Address</label>
+<input class="block w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600" id="email" name="email" placeholder="Enter your email address" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="message">Message</label>
+<textarea class="block w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-background-dark shadow-sm focus:border-primary focus:ring-primary sm:text-sm text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600" id="message" name="message" placeholder="Enter your message" rows="4"></textarea>
+</div>
+<div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90" type="submit">
+<span class="truncate">Send Message</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<footer class="border-t border-gray-200 dark:border-gray-800 mt-auto px-4 md:px-10 py-6">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-sm text-gray-500 dark:text-gray-400">© 2024 Developer Portfolio. All rights reserved.</p>
+<div class="flex items-center gap-4">
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12.013c0 4.418 2.865 8.168 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12.013C22 6.477 17.523 2 12 2z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+</svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
