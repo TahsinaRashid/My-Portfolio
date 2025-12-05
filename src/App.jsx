@@ -2,7 +2,6 @@ import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Journey from './components/Journey';
 import Hobbies from './components/Hobbies';
 import Skills from './components/Skills';
 import Projects from './components/Projects';

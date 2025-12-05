@@ -1,0 +1,29 @@
+# Netlify Configuration for Portfolio
+
+# Build command and directory
+[build]
+  command = "npm run build"
+  publish = "build"
+
+# Redirect all routes to index.html (required for React Router SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Headers for performance and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Cache control for assets
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    # Don't cache index.html so users get the latest version
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Environment variables (if needed in future)
+# [context.production.environment]
+# NODE_ENV = "production"

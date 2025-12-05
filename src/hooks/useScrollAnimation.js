@@ -41,15 +41,18 @@ export const useScrollAnimation = (options = {}) => {
       rootMargin,
     });
 
+    // Capture ref.current to avoid ESLint warning about ref in cleanup
+    const element = ref.current;
+
     // Observe the element
-    if (ref.current) {
-      observer.observe(ref.current);
+    if (element) {
+      observer.observe(element);
     }
 
     // Cleanup
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (element) {
+        observer.unobserve(element);
       }
     };
   }, [threshold, rootMargin, once, enabled]);
