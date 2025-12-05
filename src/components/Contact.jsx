@@ -27,7 +27,7 @@ function Contact() {
               <p className="text-white text-base font-normal leading-normal flex-1 truncate">tahsinarashid123@gmail.com</p>
             </div>
             <div className="shrink-0">
-              <button onClick={() => handleCopy('tahsinarashid123@gmail.com')} className="text-primary text-sm font-medium leading-normal hover:opacity-80 transition-opacity">Copy</button>
+              <button onClick={() => handleCopy('tahsinarashid123@gmail.com')} className="text-white text-sm font-medium leading-normal hover:opacity-80 transition-opacity">Copy</button>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ function Contact() {
               <p className="text-white text-base font-normal leading-normal flex-1 truncate">+88-01748614843</p>
             </div>
             <div className="shrink-0">
-              <button onClick={() => window.location.href = 'tel:+8801748614843'} className="text-primary text-sm font-medium leading-normal hover:opacity-80 transition-opacity">Call</button>
+              <button onClick={() => window.location.href = 'tel:+8801748614843'} className="text-white text-sm font-medium leading-normal hover:opacity-80 transition-opacity">Call</button>
             </div>
           </div>
         </div>
